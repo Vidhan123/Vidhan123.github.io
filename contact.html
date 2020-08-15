@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vidhan Shah | Contact Me</title>
+    <link rel="icon" href="img/logo.png">
+  
+    <!-- font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito">
+  
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <!-- loader -->
+    <script>
+      $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+        });
+      $(window).on("load",function(){
+        $(".loader-container").css("display","none");
+        $('html, body').css({
+        'height': 'auto'
+        });
+        $('html, body').css({'overflow':''});
+      });
+    </script>
+    
+  </head>
+<body>
+  <!-- loader -->
+  <div class="container-fluid bg-light loader-container">
+    <div class="row align-items-center justify-content-center loader-wrapper">
+      <div class="spinner-grow text-dark loader" role="status">
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">contact me</li>
+      <li class="breadcrumb-logo ml-auto">
+        <img src="img/logo.png" height=30 width=30 alt="logo">
+      </li>
+    </ol>
+  </nav>
+
+  <!-- main form -->
+  <div class="container" id="form">
+    <div class="row justify-content-center align-items-center mt-3">
+      <h1 class="text-white">contact me</h1>
+    </div>
+    <div class="row justify-content-center align-items-center mt-lg-2">
+      <h5 class="bg-white err" id="blankErr">Please fill all the required fields*</h5>
+    </div>
+    <div class="row justify-content-center align-items-center mt-2">
+      <form class="gform" onsubmit="return validate()" method="POST" action="https://script.google.com/macros/s/AKfycbwy6fJoPbSxDCkYMfWm56h6P-afNBLn9ZlNLvYkxig5OiMfrE0/exec">
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Full Name" id="name" name="name">
+        <h5 class="bg-white err" id="nameErr">Invalid Name</h5>
+
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Email Address*" id="email" name="email">
+        <h5 class="bg-white err" id="emailErr">Invalid Email Address</h5>
+
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Phone Number" id="number" name="number">
+        <h5 class="bg-white err" id="numberErr">Invalid Phone Number</h5>
+
+        <textarea class="form-control form-control-lg bg-dark text-white" id="message" rows="4" placeholder="Message*" name="message"></textarea>
+        <br>
+        <button type="submit" class="btn btn-outline-light w-100 mt-lg-3" id="button">Send A Message</button>
+
+        </form>
+    </div>
+  </div>
+
+</body>
+</html>

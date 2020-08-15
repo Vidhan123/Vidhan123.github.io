@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito",serif;
+  background-color: #000000;
+}
+
+/* loader */
+.loader-wrapper,.loader-container {
+  z-index: 10;
+  height: 100vh;
+}
+
+.loader {
+  z-index: 10;
+  width: 10vh;
+  height: 10vh;
+}
+
+/* navbar */
+.navbar {
+  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5))
+}
+
+.nav-item {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-brand {
+  border: 0;
+}
+
+.nav-link {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+/* about */
+.card-img {
+  height: 100%;
+}
+
+.about-card {
+  border: 0px;
+  background-color: #000;
+}
+
+.card-title{
+  font-size: 5em;
+  text-align: center;
+}
+
+.typing h3,.typing h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  font-family: 'Times New Roman', Times, serif;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.typing-1 {
+  animation: typing-1 .7s steps(3);
+  width: 3ch;
+}
+@keyframes typing-1 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 3ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-2 {
+  animation: typing-2 1.9s steps(10);
+  animation-delay: .9s;
+  width: 10ch;
+}
+@keyframes typing-2 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 10ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-3 {
+  animation: typing-3 2.5s steps(13);
+  animation-delay: 3s;
+  width: 13ch;
+}
+@keyframes typing-3 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 13ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-4 {
+  animation: typing-4 2.6s steps(16);
+  animation-delay: 6s;
+  width: 16ch;
+}
+@keyframes typing-4 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 16ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-5 {
+  animation: typing-5 2.6s steps(15);
+  animation-delay: 9s;
+  width: 15ch;
+}
+@keyframes typing-5 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 15ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-6 {
+  animation: typing-6 2.6s steps(13);
+  animation-delay: 12s;
+  width: 13ch;
+}
+@keyframes typing-6 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 13ch;border-color: #fff 0;visibility: visible;}
+}
+
+/* skills */
+.changing {
+  display: inline-block;
+}
+.changing span {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  animation: change 6s linear infinite;
+  opacity: 0;
+}
+@keyframes change {
+  from {opacity: 0;transform: translateX(-50px);}
+  10% {opacity: 1;transform: translateX(0px);}
+  20% {opacity: 1;transform: translateX(0px);}
+  30% {opacity: 0;transform: translateX(50px);}
+  to {opacity: 0;transform: translateX(50px);}
+}
+.changing span:nth-child(1)
+{
+  animation-delay: 0s;
+}
+.changing span:nth-child(2)
+{
+  animation-delay: 2s;
+}
+.changing span:nth-child(3)
+{
+  animation-delay: 4s;
+}
+
+.cursor {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  animation: blink 1.06s step-end infinite;
+}
+@keyframes blink {
+  from,to {color: transparent;}
+  50% {color: #fff;}
+}
+
+/* work */
+.bg-black {
+  background-color: #000;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.card-link {
+  font-size: 1.3rem;
+}
+
+#jp {
+  animation: flip 5s infinite;
+}
+#ms {
+  animation: flip 5s infinite;
+  animation-delay: 2.5s;
+}
+@keyframes flip {
+  from,to {transform: rotateY(0deg);border: 1px solid;}
+  50% {transform: rotateY(180deg);border: 1px solid #000;}
+}
+
+/* projects  */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  border-radius: 1rem;
+}
+
+.carousel-caption {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.carousel .card h5,.carousel .card {
+  text-align: center;
+}
+.carousel .card p {
+  text-align: justify;
+}
+
+/* footer */
+#footer hr {
+  background-color: #fff;
+}
+
+.btn-stylish {
+  position: absolute;
+  background: #000000;
+  color: #ffffff;
+  padding: 3% 6%;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 50px rgba(0,0,0,.5);
+  overflow: hidden;
+} 
+.btn-stylish:hover {
+  text-decoration: none;
+  filter: invert(100%);
+  color: #ffffff;
+}
+.btn-stylish span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#000000,#ffffff);
+  animation: slide1 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes slide1 {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(100%);}
+}
+.btn-stylish span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#000000,#ffffff);
+  animation: slide2 2s linear infinite;
+}
+@keyframes slide2 {
+  from {transform: translateY(100%);}
+  to {transform: translateY(-100%);}
+}
+.btn-stylish span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#000000,#ffffff);
+  animation: slide3 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes slide3 {
+  from {transform: translateX(100%);}
+  to {transform: translateX(-100%);}
+}
+.btn-stylish span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#000000,#ffffff);
+  animation: slide4 2s linear infinite;
+}
+@keyframes slide4 {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(100%);}
+}
+
+.footerText {
+  color: #fff;
+  text-align: center;
+}
+
+/* form */
+.breadcrumb {
+  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5));
+  font-size: 1.5rem;  
+}
+
+#form h1 {
+  font-size: 3rem;
+}
+
+#form .btn-stylish {
+  height: max-content;
+}
+
+.err {
+  animation: colorChange 1.2s  infinite;
+  text-align: center;
+  border-radius: 0.2rem;
+  visibility: hidden;
+}
+@keyframes colorChange {
+  from {background-color: #ffffff;color: #000000;}
+  to {background-color: #000000;color: #ffffff;}
+}
+
+/* media queries */
+@media all and (min-width:425px) {
+  .nav-link {
+    margin: 0 3vw;
+  }
+}
+@media all and (min-width:768px) {
+  .nav-link {
+    margin: 0 4vw;
+    font-size: 1.3rem;
+  }
+  .nav-brand {
+    margin: 0 2vw 0 3vw;
+  }
+}
+@media all and (min-width:1200px) {
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-brand {
+    margin: 0 2vw 0 2vw;
+  }
+  .typing h3 {
+    font-size: 2rem;
+  }
+  .typing h4 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1.3rem;
+  }
+}
