@@ -22,7 +22,6 @@ body {
 /* navbar */
 .navbar {
   background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5));
-  z-index: 9999;
 }
 
 .nav-item {
@@ -178,16 +177,8 @@ body {
   font-size: 1.3rem;
 }
 
-#jp {
-  animation: flip 5s infinite;
-}
-#ms {
-  animation: flip 5s infinite;
-  animation-delay: 2.5s;
-}
-@keyframes flip {
-  from,to {transform: rotateY(0deg);border: 1px solid;}
-  50% {transform: rotateY(180deg);border: 1px solid #000;}
+#jp:hover, #ms:hover {
+  filter: invert(100%);
 }
 
 /* projects  */
