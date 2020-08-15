@@ -21,7 +21,8 @@ body {
 
 /* navbar */
 .navbar {
-  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5))
+  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5));
+  z-index: 9999;
 }
 
 .nav-item {
