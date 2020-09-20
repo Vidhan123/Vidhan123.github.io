@@ -302,10 +302,50 @@ body {
   to {background-color: #000000;color: #ffffff;}
 }
 
+/* floating wp */
+
+.form-float-wrapper img {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  margin-top: 78vh;
+  margin-left: 75vw;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.modal {
+  margin-top: 45vh;
+  margin-left: 8vw;
+  max-width: 290px;
+  /* max-height: 150px; */
+}
+
+.modal-body {
+  max-height: 100px;
+}
+
+.bg {
+  background-color: #6c757d;
+}
+
 /* media queries */
+@media all and (min-width:375px) {
+  .modal {
+    margin-left: 20vw;
+  }
+}
+
 @media all and (min-width:425px) {
   .nav-link {
     margin: 0 3vw;
+  }
+  .form-float-wrapper img {
+    margin-top: 78vh;
+    margin-left: 80vw;
+  }
+  .modal {
+    margin-left: 30vw;
   }
 }
 @media all and (min-width:768px) {
@@ -315,6 +355,24 @@ body {
   }
   .nav-brand {
     margin: 0 2vw 0 3vw;
+  }
+  .form-float-wrapper img {
+    margin-top: 78vh;
+    margin-left: 90vw;
+  }
+  .modal {
+    margin-top: 43vh;
+    margin-left: 60vw;
+  }
+}
+@media all and (min-width:1024px) {
+  .form-float-wrapper img {
+    margin-top: 78vh;
+    margin-left: 92vw;
+  }
+  .modal {
+    margin-left: 70vw;
+    margin-top: 50vh;
   }
 }
 @media all and (min-width:1200px) {
@@ -332,5 +390,13 @@ body {
   }
   .card p {
     font-size: 1.3rem;
+  }
+  .form-float-wrapper img {
+    margin-top: 78vh;
+    /* margin-left: 94vw; */
+  }
+  .modal {
+    margin-left: 78vw;
+    margin-top: 47vh;
   }
 }
