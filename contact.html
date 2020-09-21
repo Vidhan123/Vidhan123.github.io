@@ -46,9 +46,7 @@
 
     <!-- whatsapp msg -->
     <div class="form-float-wrapper fixed-top">
-      <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal"></button>
-        <img class="img-fluid" src="svg/whatsapp.svg">
-      </a>
+      <img class="img-fluid" src="svg/whatsapp.svg" data-toggle="modal" data-target="#exampleModal">
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -61,10 +59,9 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="https://web.whatsapp.com/send" target="_blank">
-              <textarea name="phone" class="d-none">+917021467415</textarea>
+            <form action="https://wa.me/+917021467415/" target="_blank">
               <textarea placeholder="Your Message" name="text"></textarea>
-              <button type="submit" class="btn mb-5 ml-2 ml-md-3" style="width: 50px;">
+              <button type="submit" class="btn mb-5" style="width: 50px;">
                 <img class="img-fluid" src="img/send.png" alt="send">
               </button>
             </form>
